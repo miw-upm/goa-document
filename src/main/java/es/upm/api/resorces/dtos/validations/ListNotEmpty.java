@@ -1,4 +1,4 @@
-package es.upm.api.domain.model.validations;
+package es.upm.api.resorces.dtos.validations;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
@@ -10,9 +10,9 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = PositiveBigDecimalValidator.class)
-public @interface PositiveBigDecimal {
-    String message() default "Expected positive";
+@Constraint(validatedBy = ListNotEmptyValidator.class)
+public @interface ListNotEmpty {
+    String message() default "Expected not empty";
 
     Class<?>[] groups() default {};
 

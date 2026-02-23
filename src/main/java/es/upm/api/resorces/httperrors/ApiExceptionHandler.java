@@ -1,6 +1,6 @@
-package es.upm.api.infrastructure.resources.httperrors;
+package es.upm.api.resorces.httperrors;
 
-import es.upm.api.domain.exceptions.*;
+import es.upm.api.services.exceptions.*;
 import feign.FeignException;
 import feign.RetryableException;
 import org.apache.logging.log4j.LogManager;

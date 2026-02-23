@@ -1,4 +1,4 @@
-package es.upm.api.domain.exceptions;
+package es.upm.api.services.exceptions;
 
 public class BadGatewayException extends RuntimeException {
     private static final String DESCRIPTION = "Bad Gateway Exception";

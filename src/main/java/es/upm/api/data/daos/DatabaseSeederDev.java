@@ -1,4 +1,4 @@
-package es.upm.api.infrastructure.mongodb.repositories;
+package es.upm.api.data.daos;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.annotation.Profile;

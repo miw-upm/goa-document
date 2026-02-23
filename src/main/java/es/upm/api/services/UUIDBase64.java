@@ -1,4 +1,4 @@
-package es.upm.api.domain.services;
+package es.upm.api.services;
 
 import java.nio.ByteBuffer;
 import java.util.Base64;

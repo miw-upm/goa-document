@@ -1,4 +1,4 @@
-package es.upm.api.domain.exceptions;
+package es.upm.api.services.exceptions;
 
 public class ConflictException extends RuntimeException {
     private static final String DESCRIPTION = "Conflict Exception";
