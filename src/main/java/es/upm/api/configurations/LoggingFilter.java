@@ -4,7 +4,8 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -18,11 +19,11 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Log4j2
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @Profile({"dev"})
 public class LoggingFilter extends OncePerRequestFilter {
+    private static final Logger log = LogManager.getLogger(LoggingFilter.class);
 
 
     @Override

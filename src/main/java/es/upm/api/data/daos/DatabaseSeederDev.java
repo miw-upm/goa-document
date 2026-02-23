@@ -1,13 +1,14 @@
 package es.upm.api.data.daos;
 
-import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Log4j2
 @Service
 @Profile({"dev", "test"})
 public class DatabaseSeederDev {
+    private static final Logger log = LogManager.getLogger(DatabaseSeederDev.class);
 
 
     public DatabaseSeederDev() {

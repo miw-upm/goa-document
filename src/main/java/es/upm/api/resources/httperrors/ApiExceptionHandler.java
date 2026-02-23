@@ -1,4 +1,4 @@
-package es.upm.api.resorces.httperrors;
+package es.upm.api.resources.httperrors;
 
 import es.upm.api.services.exceptions.*;
 import feign.FeignException;

@@ -1,4 +1,4 @@
-package es.upm.api.resorces.dtos.validations;
+package es.upm.api.resources.dtos.validations;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
