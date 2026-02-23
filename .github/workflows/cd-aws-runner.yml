@@ -1,4 +1,4 @@
-name: CD. Deploy to AWS App Runner
+name: CD. AWS App Runner
 on:
   push:
     branches:
