@@ -1,4 +1,4 @@
-name: CI goa-document
+name: CI goa
 on:
   push:
     branches:
